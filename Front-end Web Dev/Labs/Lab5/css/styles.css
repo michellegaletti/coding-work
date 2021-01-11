@@ -1,0 +1,72 @@
+h1{
+	font-family: 'Grenze', serif;
+	text-align: center;
+	color: navy;
+	font-size: 6em;
+	margin: 0;
+}
+
+h2{
+	font-family: 'Grenze', serif;
+	color: navy;
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: 3%;
+}
+
+body{
+	font-family: "Helvetica", sans-serif;
+	background-color: #fbfbfb;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+p{
+	margin-top: 3%;
+}
+
+#buttonHolder{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.description{
+	padding-left: 5%;
+}
+
+#backUp{
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+#backUp a{
+	text-decoration: none;
+	color: navy;
+	font-weight: bold;
+}
+
+a{
+	color: olive;
+}
+
+a:visited{
+	color: navy;
+}
+
+a:hover{
+	color: teal;
+}
+
+@media only screen and (max-width: 700px){
+	h1{
+		font-size: 3em;
+	}
+	h2{
+		font-size: 1.25em;
+	}
+	#results{
+		font-size: 0.85em;
+		margin-top: 10%;
+	}
+}

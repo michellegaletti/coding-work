@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Observations</title>
+		<link href="css/index.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="user_authenticate">
+			<span id="user_status"> </span>
+				<button type="button" id="signin">Sign In</button>
+				<button type="button" id="signout">Sign Out</button>
+	
+		</div>
+		<div id="main">
+			<h1>Avalanche Awareness</h1>
+				<div id="nav">
+					<span class="navitem">
+						<a href="index.html">Home</a>
+					</span>
+					<span class="navitem">
+						<a href="weather.html">Weather</a>
+					</span>
+				</div>
+				<img src="images/banner4.jpg" alt="slab">
+				<h3>Submit Observation</h3>
+				<div id="formelement">
+				<form>
+
+					<p>
+						<label for="name" class="label">Name</label>
+						<input name="name" type="text" id="name" size="36" required >
+					</p>
+					<p>
+						<label for="email" class="label">Email</label>
+						<input name="email" id="email" type="email" size="36">
+					</p>
+					<p>
+						<label for="phone" class="label">Phone</label>
+						<input name="phone" type="text" id="phone" size="36">
+					</p>
+
+					<p>
+						Did you see any avalanches?<br>
+						<input type="radio" name="avalanche" id="avalanche_yes" value="Yes">
+						<label for="avalanche_yes">Yes</label>
+						<br>
+						<input type="radio" name="avalanche" id="avalanche_no" value="No">
+						<label for="avalanche_no">No</label>
+					</p>
+					<p>
+					    Did you trigger any avalanches?<br>
+						<input type="radio" name="trigger" id="trigger_yes" value="Yes">
+						<label for="trigger_yes">Yes</label>
+						<br>
+						<input type="radio" name="trigger" id="trigger_no" value="No">
+						<label for="trigger_no">No</label>
+					</p>
+					<p>
+					    Was anyone caught in an avalanche?<br>
+						<input type="radio" name="caught" id="caught_yes" value="Yes">
+						<label for="caught_yes">Yes</label>
+						<br>
+						<input type="radio" name="caught" id="caught_no" value="No">
+						<label for="caught_no">No</label>
+					</p>
+					<p>
+						<label for="location" class="label">Location</label>
+						<input name="location" type="text" id="location" size="36">
+					</p>
+					<p>
+						<label for="description" class="label">Description</label><br>
+						<textarea id="description" rows="5" cols="30">
+						</textarea>
+					</p>
+					<p>
+						<button type="button" id="enter"> Submit Observation </button>
+					</p>
+				</form>
+			</div>
+		<h3>Recorded Observations</h3>
+	<div id="allheadings">
+		<span class="name_heading">Name</span>
+		<span class="location_heading">Location</span>
+		<span class="saw_heading">Saw an avalanche </span>
+		<span class="trigger_heading">Triggered an avalanche</span>
+		<span class="caught_heading">Caught in an avalanche</span>
+	</div>
+	<div id="results"></div>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA1fOzp0uJQtPxjyPmjL7l5o3Ore5uTKuE",
+    authDomain: "finalavalanchespotting.firebaseapp.com",
+    databaseURL: "https://finalavalanchespotting.firebaseio.com",
+    projectId: "finalavalanchespotting",
+    storageBucket: "finalavalanchespotting.appspot.com",
+    messagingSenderId: "526151027017",
+    appId: "1:526151027017:web:75cad37cb792e203a57298"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/observation.js"></script>
+</body>
+</html>

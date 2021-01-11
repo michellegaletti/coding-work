@@ -1,0 +1,113 @@
+body{
+	font-family: "Helvetica", sans-serif;
+	background-color: #f4ffff;
+}
+
+h1{
+	text-align: center;
+	font-family: 'Srisakdi', cursive;
+	font-size: 3em;
+}
+
+h2{
+	font-family: 'Srisakdi', cursive;
+	text-align: center;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+legend{
+	font-family: 'Srisakdi', cursive;
+	font-size: 1.25em;
+}
+
+select {
+  	background-color: #a4deff;
+  	display: block;
+  	width: 20%;
+	padding: 0.5%;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+button{
+	background-color: #a4deff;
+	display: block;
+	width: 10%;
+	padding: 0.5%;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+
+.formelement {
+	/*margin-left: 45%;*/
+	text-align: center;
+}
+
+fieldset {
+	display: inline-block;
+	margin: auto;
+}
+
+#startOrder, #paymethod{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.payment label{
+	float: left;
+	width: 275px;
+	text-align: left;
+	padding-right: 5px;
+}
+.name_heading{
+	font-size: 1.5em;
+	font-family: 'Srisakdi', cursive;
+	/*margin-left: 2%;*/
+	width: 25%;
+	float: left;
+}
+
+.email_heading{
+	font-size: 1.5em;
+	font-family: 'Srisakdi', cursive;
+	width: 25%;
+	float: left;
+}
+
+.event_heading{
+	font-size: 1.5em;
+	font-family: 'Srisakdi', cursive;
+	width: 25%;
+	float: left;
+}
+
+.pay_heading{
+	font-size: 1.5em;
+	font-family: 'Srisakdi', cursive;
+	width: 25%;
+	float: left;
+}
+
+.name{
+	width: 25%;
+	float: left;
+}
+
+.email{
+	width: 25%;
+	float: left;
+}
+
+.event{
+	width: 25%;
+	float: left;
+}
+
+.pay{
+	width: 25%;
+	float: left;
+}

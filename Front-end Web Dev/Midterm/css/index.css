@@ -1,0 +1,112 @@
+
+body{
+	background: "dcdcdc";
+	font-family: "Helvetica", sans-serif;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+nav ul{
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 5%;
+}
+
+nav li{
+	display: inline;
+}
+
+li a{
+	padding: 10%;
+	color: black;
+}
+
+figure{
+	text-align: center;
+}
+
+img{
+	max-width: 60%;
+}
+
+#types img{
+	display: inline;
+	margin-left: 10%;
+	margin-bottom: 2%;
+	padding-left:10%;
+}
+
+
+#flatironpic{
+	max-width: 30%;
+ 	float: left; 
+	position: absolute;
+}
+
+#climbcap{
+	float: right;
+	width: 50%;
+	text-align: left;
+	margin-top: 10%;
+}
+
+.climbtype {
+	color: "black";
+	margin-bottom: 2%;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+	background: url(../images/downarrow.png) no-repeat 0.6em;
+	padding-left:7%;
+	cursor: pointer;
+}
+
+.climbtype.close {
+	background-image: url(../images/uparrow.png);
+}
+
+.climbsafety{
+	display: block;
+	margin-left: 1.5em;	
+}
+
+@media only screen and (max-width: 700px){
+	nav{
+		display: inline;
+		font-size: 1.25em;
+	}
+	li a{
+		padding: 4%;
+	}
+	h1{
+		font-size: 2em;
+	}
+	h2{
+		font-size: 1.25em;
+	}
+	#types img{
+		display: inline;
+		margin-bottom: 2%;
+		padding-left:5%;
+		max-width: 12%;
+	}
+	#flatironpic, #climbcap{
+		display: inline;
+		margin-top: 0;
+	}
+	body{
+		font-size: 0.75em;
+	}
+	.climbtype {
+		color: "black";
+		margin-bottom: 2%;
+		font-size: 1em;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+		background: url(../images/downarrow.png) no-repeat 0.3em;
+		padding-left: 10%;
+		cursor: pointer;
+	}
+}

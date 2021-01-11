@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Deaths vs Funding</title>
+	<link href="css/index.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+	<!-- <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.13/esri/themes/light/main.css"
+    /> -->
+  <script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+  </script>
+   <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+   	<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+</head>
+
+<body>
+	<header>
+		<h1>US Funding for Research versus Leading Causes of Deaths</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href = "#chartContainer">Chart</a></li>
+			<li><a href = "#visualization">Map</a></li>
+			<li><a href = "#quizStart">Quiz</a></li>
+		</ul>
+	</nav>
+	<div id="chartContainer"></div>
+	<button type="button" id="changeChart">See 2017 Data</button>
+	<button type="button" id="changeBack">See 2009 Data</button>
+	<script src="https://js.arcgis.com/4.13/"></script>
+	<h2> Amount of Funding in Research by Countries</h2>
+	<div id='visualization'></div>
+	<div id="viewDiv"><h3> Legend </h3></div>
+	<h3 id="quizStart"> Quiz Yourself </h3>
+	<div class="question" id= "q1">What is the leading cause of deaths in the US as of 2017?</div>
+		<div class="answer" id = "a1">
+			<p> Heart disease with a total of 647,457 deaths. Over the years, heart disease including heart attacks, has been one of the leading causes of deaths in the US.</p>
+		</div>
+		<!-- Stats from: https://www.simplyinsurance.com/average-us-life-expectancy-statistics/ -->
+	<div class="question" id = "q2"> Which gender do you believe has the higher life expectancy? </div>
+		<div class="answer" id = "a2">
+			<p> Women live an average of 5 years longer than men in the US. They have a life expectancy of 81.1 years and men have a life expectancy of 76.1 years.</p>
+		</div>
+		<!-- Stats from: https://www.simplyinsurance.com/average-us-life-expectancy-statistics/ -->
+		<div class="question" id = "q3"> Which country has the highest life expectancy? </div>
+		<div class="answer" id = "a3">
+			<p> Monaco actually has the highest life expectancy of 89.4 years. The second highest is Japan with 85.3 years.</p>
+		</div>
+		<div class="question" id = "q4"> Where does the US life expectancy sit related to the rest of the countries? </div>
+		<div class="answer" id = "a4">
+			<p> The United States is actually 43rd in the world for life expectancy with the average sitting at around 80 years. This is actually pretty good! Depending on the location you are getting your data from, it will range between 75-80 years.</p>
+		</div>
+		<div class="question" id = "q5"> How many deaths do you believe are associated with accidents of some sort? </div>
+		<div class="answer" id = "a5">
+			<p> In 2017, 169,936 people died from unintentional injuries. Unintentional injuries can range from falling and hitting ones head and getting a severe and terminal hemmorage to a car accident.</p>
+		</div>
+	<script src="js/index.js"></script>
+
+</body>
+</html>

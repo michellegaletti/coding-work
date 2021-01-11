@@ -1,0 +1,146 @@
+<DOCTYPE! html>
+<html>
+	<head> 
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<link rel = "stylesheet" href = "css/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Srisakdi&display=swap" rel="stylesheet">
+		<title> Lab 6 </title>
+	</head>
+	<body>
+		<header id = "title"> 
+			<h1> Concerts, Plays, and Musicals! Oh my! </h1>
+		</header>
+		<form>
+			<div class="formelement">
+				<h2> What event interests you most?</h2>
+				<select id="event">
+					<option value="none">None</option>
+					<option value="concerts">Concerts</option>
+					<option value="football">Football Games</option>
+					<option value="baseball">Baseball Games</option>
+					<option value="musical">Small Local Plays and Musicals</option>
+					<option value="plays">Broadway Plays and Musicals</option>
+				</select>
+			</div>
+			<!-- <div class="formelement">
+				<h2> Which venue for said events do you like to go to?</h2>
+				<select id="venue">
+					<option value="none">None</option>
+					<option value="concerts">FoxTheatre</option>
+					<option value="football">Bronco Stadium</option>
+					<option value="baseball">Rockies Stadium</option>
+					<option value="musical">Boulder Dinner Theatre</option>
+					<option value="plays">Buell Theatre</option>
+				</select>
+			</div> -->
+			<br>
+			<h2> Would you be interested in getting season tickets for those events at their set venue?</h2>
+			<br>
+			<div class="formelement">
+				<div>
+					<input type = "radio" name = "tickets" id = "ticyes" value = "yes">
+					<label for = "ticyes"> Yes </label>
+				</div>
+				<div>
+					<input type = "radio" name = "tickets" id = "ticno" value = "no">
+					<label for = "ticno"> No </label>
+				</div>
+			</div>
+			<br>
+			<div class="payment" id="startOrder">
+				<fieldset>
+				<legend>Billing Information</legend>
+				<div>
+					<label for="name" class="label">Name</label>
+					<input name="name" type="text" id="name" size="36" required>
+				</div>
+				<div>
+					<label for="email" class="label">Email</label>
+					<input name="email" id="email" type="email" size="36" required>
+				</div>
+				<div>
+					<label for="address" class="label">Address</label>
+					<input name="address" type="text" id="address" size="36">
+				</div>
+				<div>
+					<label for="city" class="label">City</label>
+					<input name="city" type="text" id="city" size="36">
+				</div>
+				<div>
+					<label for="state" class="label">State</label>
+					<input name="state" type="text" id="state" size="36">
+				</div>
+				<div>
+					<label for="zip" class="label">Postal Code</label>
+					<input name="zip" type="text" id="zip" size="36" required>
+				</div>
+				<div>
+					<label for="country" class="label">Country</label>
+					<input name="country" id="country" type="text" size="36" required>
+				</div>
+				</fieldset>
+			</div>
+			<br>
+			<div id = "paymethod">
+			<fieldset>
+				<legend> Payment Method </legend>
+				<div>
+					<label for="venmo">Venmo</label>
+					<input type="radio" name="paytype" id="venmo" value="venmo">
+					<label for="visa">Visa</label>
+					<input type="radio" name="paytype" id="visa" value="visa">
+					<label for="mastercard">MasterCard</label>
+					<input type="radio" name="paytype" id="mastercard" value="mastercard">
+				</div>
+				<div id="creditCard" class="payment">
+					<div>
+						<label for="cardNumber" class="label">Card Number</label>
+						<input type="text" name="cardNumber" id="cardNumber" size="36" required>
+					</div>
+					<div>
+						<label for="expiration" class="label">Expiration Date</label>
+						<input type="text" name="expiration" id="expiration" size="36" required>
+					</div>
+				</div>
+			</fieldset>
+			</div>
+		<p>
+			<button type="submit" id="enter">Enter</button>
+		</p>
+	</form>
+	<div id="orderTitles">
+		<h2> Previous Orders</h2>
+		<span class="name_heading">Name</span>
+		<span class="email_heading">Email</span>
+		<span class="event_heading">Event </span>
+		<span class="pay_heading">Payment Type</span>
+	</div>
+
+	<div id="prevOrder"></div>
+	<!-- Firebase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBbewPvisOvCHwb7pPy0truqJqcfJhROdY",
+    authDomain: "playconcert-tickets.firebaseapp.com",
+    databaseURL: "https://playconcert-tickets.firebaseio.com",
+    projectId: "playconcert-tickets",
+    storageBucket: "playconcert-tickets.appspot.com",
+    messagingSenderId: "534957300425",
+    appId: "1:534957300425:web:2f8237e043a00775b8cb18",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/index.js"></script>
+	</body>
+</html>

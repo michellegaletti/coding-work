@@ -1,0 +1,60 @@
+<DOCTYPE! html>
+<html>
+	<head> 
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<link rel = "stylesheet" href = "index.css">
+		<title> Lab 2 </title>
+	</head>
+	<body>
+		<header id = "title"> 
+			<h1> Music to Your Ears </h1>
+		</header>
+		<form>
+			<div class="formelement">
+				<select id="genre">
+					<option value="none">None</option>
+					<option value="country">Country</option>
+					<option value="rap">Rap</option>
+					<option value="jazz">Jazz</option>
+					<option value="hard rock">Hard Rock</option>
+					<option value="pop">Pop</option>
+				</select>
+			</div>
+			<br> 
+			<label for = "artist"> Who is your favorite artist? </label>
+			<br>
+			<div class="formelement">
+				<input type = "text" id = "artist">
+			</div>
+			<br>
+			<label for ="concert"> Where do you/would you like to go for concerts? </label>
+			<br>
+			<div class="formelement">
+				<input type = "text" id = "concert">
+			</div>
+			<p> Would you be interested in getting tickets for a concert? </p>
+			<br>
+			<div class="formelement">
+				<div>
+					<input type = "radio" name = "tickets" id = "ticyes" value = "yes">
+					<label for = "ticyes"> Yes </label>
+				</div>
+				<div>
+					<input type = "radio" name = "tickets" id = "ticno" value = "no">
+					<label for = "ticno"> No </label>
+				</div>
+				<div> 
+					<input type = "radio" name = "tickets" id = "ticmaybe" value = "maybe">
+					<label for = "ticmaybe"> Maybe </label>
+				</div>
+			</div>
+		<p>
+			<button type="button" id="enter">Enter</button>
+		</p>
+		<textarea id="favmus" rows="10" cols="30"></textarea>
+		</form>
+		<div id = "musicVid"></div>
+		<script src = "index.js"></script>
+	</body>
+</html>

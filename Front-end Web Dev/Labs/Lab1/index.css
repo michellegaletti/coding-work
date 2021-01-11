@@ -1,0 +1,26 @@
+body{
+	font-family: 'Livvic', sans-serif;
+}
+
+h1{
+	font-family: 'Niconne', cursive;
+	font-size: 5em;
+	text-align: center;
+}
+
+
+
+#favorite{
+	font-size: 2em;
+	text-align: center;
+}
+
+img{
+	max-width: 100%;
+}
+
+@media screen and (max-width: 525px){
+	body{
+		background-color: #FEFEBE;
+	}
+}

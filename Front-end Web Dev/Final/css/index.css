@@ -1,0 +1,142 @@
+body{
+	font-family: "Helvetica", sans-serif;
+	background-color: #f4ffff;
+	margin: 0 auto;
+	text-align: center;
+}
+#user_status{
+	text-align: left;
+	margin-right: 50%;
+}
+
+#formelement{
+	margin-left: 40%;
+	margin-bottom: 2%;
+	text-align: left;
+}
+
+#nav{
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+.navitem{
+	padding: 8%;
+	font-weight: bold;
+}
+
+button{
+	background-color: #a4deff;
+	display: block;
+	width: 30%;
+	padding: 0.5%;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 8px;
+}
+
+#signin, #signout{
+	display: inline;
+	width: 7%;
+	margin-top: 2%;
+	font-weight: normal;
+	font-size: 0.75em;
+}
+
+.name_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+
+.location_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.saw_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.trigger_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.caught_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+
+.name{
+	width: 20%;
+	float: left;
+}
+
+.location{
+	width: 20%;
+	float: left;
+}
+
+.observe{
+	width: 20%;
+	float: left;
+}
+
+.trigger{
+	width: 20%;
+	float: left;
+}
+
+.caught{
+	width: 20%;
+	float: left;
+}
+
+.locwe_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.weather_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.temp_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.wind_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.precipitation_heading{
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.locwe{
+	width: 20%;
+	float: left;
+}
+.weather{
+	width: 20%;
+	float: left;
+}
+.temp{
+	width: 20%;
+	float: left;
+}
+.windchill{
+	width: 20%;
+	float: left;
+}
+.precipitation{
+	width: 20%;
+	float: left;
+}
