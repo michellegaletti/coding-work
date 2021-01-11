@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBActionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bil-rj-W1G">
+                                <rect key="frame" x="186" y="157" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VE3-ir-zv1">
+                                <rect key="frame" x="233" y="239" width="52" height="30"/>
+                                <state key="normal" title="Second"/>
+                                <connections>
+                                    <action selector="buttonRespond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tEi-qC-P6C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dz6-U4-SMI">
+                                <rect key="frame" x="119" y="239" width="30" height="30"/>
+                                <state key="normal" title="First"/>
+                                <connections>
+                                    <action selector="buttonRespond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2O-iX-jyc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dz6-U4-SMI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="195" id="1Gc-qN-h7h"/>
+                            <constraint firstItem="VE3-ir-zv1" firstAttribute="leading" secondItem="Dz6-U4-SMI" secondAttribute="trailing" constant="84" id="6hR-pW-K4h"/>
+                            <constraint firstItem="Dz6-U4-SMI" firstAttribute="baseline" secondItem="VE3-ir-zv1" secondAttribute="baseline" id="NlG-jO-IVt"/>
+                            <constraint firstItem="Dz6-U4-SMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="Sou-oD-Tqs"/>
+                            <constraint firstItem="Bil-rj-W1G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="oqa-EX-mPj"/>
+                            <constraint firstItem="Bil-rj-W1G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uaz-j7-XCj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelResult" destination="Bil-rj-W1G" id="5Bg-JI-wNw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
